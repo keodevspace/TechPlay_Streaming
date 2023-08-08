@@ -1,0 +1,143 @@
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+/* Tablet */
+@media (min-width: 834px) {
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+}
+
+.rodape__container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* SECAO SUPERIOR */
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
+/* VIDEOS */
+
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* MENU */
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* MENU LATERAL PARA TELAS DE TABLETS */
+
+@media (min-width: 834px) {
+    .menu__container {
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu__container {
+        width: 239px;
+        overflow-y: scroll;
+    }
+
+    .menu__lista {
+        height: auto;
+        gap: 15px;
+        padding: 20px 17px 20px 15px;
+    }
+
+    .menu__itens {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    }
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    /* .jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .maispagina {
+        order: 4;
+    } */
+}
