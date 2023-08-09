@@ -29,9 +29,8 @@
 /* SECAO SUPERIOR */
 .superior__secao__container {
     display: flex;
-    align-items: center;
     white-space: nowrap;
-    overflow-x: scroll;
+    align-items: center;    
     gap: 15px;
 }
 
@@ -53,7 +52,7 @@
 .menu__container {
     position: fixed;
     bottom: 0%;
-    height: 74px;
+    height: 70px;
     width: 100%;
 }
 
@@ -124,20 +123,4 @@
     .menu__lista:nth-child(3) {
         flex-direction: column-reverse;
     }
-
-    /* .jogos {
-        order: 3;
-    }
-
-    .filmes {
-        order: 2;
-    }
-
-    .premium {
-        order: 1;
-    }
-
-    .maispagina {
-        order: 4;
-    } */
 }
